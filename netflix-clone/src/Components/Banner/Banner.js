@@ -38,13 +38,13 @@ function truncate(str, n) {
     >
       <div className="banner_contents">
         <h1 className="banner_title">
-          {movie.title || movie.name || movie.original_name}
+          {movie?.title || movie?.name || movie?.original_name}
         </h1>
         <div className="banner_buttons">
           <button className="banner_button play">Play</button>
           <button className="banner_button">My List</button>
         </div>
-        {/* Uncomment if you want description */}
+       
         <h1 className='banner_description'>
           {truncate(movie.overview, 150)}
         </h1>
